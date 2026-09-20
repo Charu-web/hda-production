@@ -1,0 +1,65 @@
+/* Custom CSS for registration form enhancements */
+.error-msg {
+  color: #ff4d4f; /* vivid red for errors */
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+#formMessage {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+#formMessage.success {
+  background-color: rgba(0, 128, 0, 0.1);
+  color: #00c853; /* green */
+}
+
+#formMessage.error {
+  background-color: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f; /* red */
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Input with icon (password toggle) */
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-with-icon input {
+  flex: 1;
+  padding-right: 2.5rem; /* space for eye icon */
+}
+.toggle-password {
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+}
+.toggle-password i {
+  font-size: 1rem;
+}
+
+/* Image preview container */
+.image-preview {
+  margin-top: 0.5rem;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  border: 2px solid var(--gold-soft);
+  border-radius: 4px;
+}
+.image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
